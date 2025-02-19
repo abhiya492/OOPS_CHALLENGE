@@ -1,0 +1,31 @@
+
+🔥 Challenge 4: Ride Sharing App (Like Uber)
+Goal: Design a ride-sharing system where multiple vehicle types have different fare calculations.
+
+Requirements
+Encapsulation:
+Private __fare_per_km in Vehicle.
+Inheritance & Polymorphism:
+Bike, Car, SUV override calculate_fare().
+Magic Methods (__str__)
+Print ride details.
+
+
+##solution
+Ride Sharing App
+The ride-sharing implementation meets all requirements:
+
+Encapsulation:
+
+Private __fare_per_km attribute with getter/setter methods
+
+
+Inheritance & Polymorphism:
+
+Bike, Car, and SUV classes inherit from the Vehicle base class
+Each subclass can override the calculate_fare() method (SUV adds a comfort charge)
+
+
+Magic Methods:
+
+__str__ method displays vehicle details

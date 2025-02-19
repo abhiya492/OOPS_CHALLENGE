@@ -1,0 +1,28 @@
+🔥 Challenge 3: ATM Simulation
+Goal: Design an ATM system for handling withdrawals, deposits, and transfers.
+
+Requirements
+Encapsulation:
+BankAccount class with a private __balance.
+Operator Overloading (-)
+account1 - account2 transfers balance.
+Magic Methods (__str__)
+Print account details.
+
+
+##solution
+ATM Simulation
+The BankAccount class meets all requirements:
+
+1.Encapsulation:
+Private __balance attribute with appropriate methods for accessing and modifying it
+deposit(), withdraw(), and transfer() methods provide controlled access to the balance
+
+
+2.Operator Overloading:
+The - operator is overloaded through __sub__ to transfer the entire balance from one account to another
+When you do account1 - account2, it transfers all money from account1 to account2
+
+
+3.Magic Methods:
+__str__ method prints account details in the specified format.

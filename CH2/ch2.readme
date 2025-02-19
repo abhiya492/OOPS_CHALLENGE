@@ -1,0 +1,34 @@
+🔥 Challenge 2: Employee Management System
+Goal: Build a system for managing employees with different roles and salaries.
+
+Requirements
+Encapsulation:
+Private __salary attribute with validation.
+Inheritance & Polymorphism:
+Manager, Developer, Intern inherit Employee, overriding calculate_bonus().
+Operator Overloading (>)
+Compare employees based on salary.
+Magic Method (__str__)
+Print employee details.
+
+##Solution
+
+This implementation meets all your requirements:
+
+1.Encapsulation:
+Private __salary attribute with getter/setter methods
+Validation in the setter ensures salary is a non-negative number
+
+
+2.Inheritance & Polymorphism:
+Manager, Developer, and Intern classes inherit from the Employee base class
+Each subclass overrides the calculate_bonus() method with role-specific bonus calculations
+
+
+3.Operator Overloading:
+The __gt__ (greater than) method allows comparing employees based on their salaries
+Returns True if the first employee's salary is greater than the second's
+
+
+4.Magic Methods:
+__str__ is implemented to print employee details in the required format
