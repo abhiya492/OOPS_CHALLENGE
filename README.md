@@ -13,7 +13,7 @@ Goal: Design a system for an online store with multiple types of products, each 
 - **Operator Overloading (+):** Adding two Product objects should merge their price.
 - **Magic Methods (`__str__`):** Print details like Product: Laptop, Price: 50000, Tax: 18%.
 
-### Solution
+### Solution [https://github.com/abhiya492/OOPS_CHALLENGE/blob/master/CH1/P1.py]
 This system implements all the required features:
 
 - **Encapsulation:** The Product class has a private `__price` attribute with getter/setter methods.
@@ -32,7 +32,7 @@ Goal: Build a system for managing employees with different roles and salaries.
 - **Operator Overloading (`>`):** Compare employees based on salary.
 - **Magic Method (`__str__`):** Print employee details.
 
-### Solution
+### Solution [https://github.com/abhiya492/OOPS_CHALLENGE/blob/master/CH2/P2.py]
 This implementation meets all your requirements:
 
 1. **Encapsulation:** Private `__salary` attribute with getter/setter methods. Validation in the setter ensures salary is a non-negative number.
@@ -50,7 +50,7 @@ Goal: Design an ATM system for handling withdrawals, deposits, and transfers.
 - **Operator Overloading (-):** `account1 - account2` transfers balance.
 - **Magic Methods (`__str__`):** Print account details.
 
-### Solution
+### Solution  [https://github.com/abhiya492/OOPS_CHALLENGE/blob/master/CH3/P3.py]
 The BankAccount class meets all requirements:
 
 1. **Encapsulation:** Private `__balance` attribute with appropriate methods for accessing and modifying it. `deposit()`, `withdraw()`, and `transfer()` methods provide controlled access to the balance.
@@ -67,7 +67,7 @@ Goal: Design a ride-sharing system where multiple vehicle types have different f
 - **Inheritance & Polymorphism:** Bike, Car, SUV override `calculate_fare()`.
 - **Magic Methods (`__str__`):** Print ride details.
 
-### Solution
+### Solution  [https://github.com/abhiya492/OOPS_CHALLENGE/blob/master/CH4/p4.py]
 The ride-sharing implementation meets all requirements:
 
 1. **Encapsulation:** Private `__fare_per_km` attribute with getter/setter methods.
