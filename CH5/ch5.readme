@@ -1,0 +1,38 @@
+# **Challenge 5: Library Management System**
+
+### Goal: Design a system for managing a library with books, members, and librarians.
+
+### Requirements
+Encapsulation:
+- Book class with private attributes (__title, __author) and getter/setter.
+- Member class with private attributes (__name, __member_id) and getter/setter.
+- Librarian class with private attributes (__name, __employee_id) and getter/setter.
+
+Inheritance & Polymorphism:
+- Fiction, NonFiction inherit from Book, each implementing its own get_genre().
+
+Operator Overloading (+):
+- Adding two Book objects should merge their titles.
+
+Magic Methods (__str__):
+- Print details like Book: "Title", Author: "Author".
+
+## Solution
+
+This system implements all the required features:
+
+### Encapsulation:
+- The Book class has private __title and __author attributes with getter/setter methods.
+- The Member class has private __name and __member_id attributes with getter/setter methods.
+- The Librarian class has private __name and __employee_id attributes with getter/setter methods.
+
+### Inheritance & Polymorphism:
+- Fiction and NonFiction classes inherit from Book.
+- Each subclass overrides the get_genre() method with its specific implementation.
+
+### Operator Overloading:
+- The __add__ method allows adding two books to create a combined title.
+- It concatenates the titles of the two books.
+
+### Magic Methods:
+- __str__ is implemented to print book details in the required format.

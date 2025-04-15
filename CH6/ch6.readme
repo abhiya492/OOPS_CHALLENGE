@@ -1,0 +1,38 @@
+# **Challenge 6: Hotel Booking System**
+
+### Goal: Design a system for managing hotel bookings with rooms, guests, and bookings.
+
+### Requirements
+Encapsulation:
+- Room class with private attributes (__room_number, __room_type) and getter/setter.
+- Guest class with private attributes (__name, __guest_id) and getter/setter.
+- Booking class with private attributes (__booking_id, __guest, __room) and getter/setter.
+
+Inheritance & Polymorphism:
+- SingleRoom, DoubleRoom inherit from Room, each implementing its own get_room_type().
+
+Operator Overloading (+):
+- Adding two Booking objects should merge their booking IDs.
+
+Magic Methods (__str__):
+- Print details like Booking: "Booking ID", Guest: "Guest Name", Room: "Room Number".
+
+## Solution
+
+This system implements all the required features:
+
+### Encapsulation:
+- The Room class has private __room_number and __room_type attributes with getter/setter methods.
+- The Guest class has private __name and __guest_id attributes with getter/setter methods.
+- The Booking class has private __booking_id, __guest, and __room attributes with getter/setter methods.
+
+### Inheritance & Polymorphism:
+- SingleRoom and DoubleRoom classes inherit from Room.
+- Each subclass overrides the get_room_type() method with its specific implementation.
+
+### Operator Overloading:
+- The __add__ method allows adding two bookings to create a combined booking ID.
+- It concatenates the booking IDs of the two bookings.
+
+### Magic Methods:
+- __str__ is implemented to print booking details in the required format.
