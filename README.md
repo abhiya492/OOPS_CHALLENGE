@@ -73,3 +73,41 @@ The ride-sharing implementation meets all requirements:
 1. **Encapsulation:** Private `__fare_per_km` attribute with getter/setter methods.
 2. **Inheritance & Polymorphism:** Bike, Car, and SUV classes inherit from the Vehicle base class. Each subclass can override the `calculate_fare()` method (SUV adds a comfort charge).
 3. **Magic Methods:** `__str__` method displays vehicle details.
+
+## Challenge 5: Library Management System
+
+### Description
+Goal: Design a system for managing a library with books, members, and librarians.
+
+**Requirements:**
+- **Encapsulation:** Book class with private attributes (`__title`, `__author`) and getter/setter.
+- **Inheritance & Polymorphism:** Fiction, NonFiction inherit from Book, each implementing its own `get_genre()`.
+- **Operator Overloading (+):** Adding two Book objects should merge their titles.
+- **Magic Methods (`__str__`):** Print details like Book: "Title", Author: "Author".
+
+### Solution [https://github.com/abhiya492/OOPS_CHALLENGE/blob/master/CH5/P5.py]
+This system implements all the required features:
+
+1. **Encapsulation:** The Book class has private `__title` and `__author` attributes with getter/setter methods.
+2. **Inheritance & Polymorphism:** Fiction and NonFiction classes inherit from Book. Each subclass overrides the `get_genre()` method with its specific implementation.
+3. **Operator Overloading:** The `__add__` method allows adding two books to create a combined title. It concatenates the titles of the two books.
+4. **Magic Methods:** `__str__` is implemented to print book details in the required format.
+
+## Challenge 6: Hotel Booking System
+
+### Description
+Goal: Design a system for managing hotel bookings with rooms, guests, and bookings.
+
+**Requirements:**
+- **Encapsulation:** Room class with private attributes (`__room_number`, `__room_type`) and getter/setter.
+- **Inheritance & Polymorphism:** SingleRoom, DoubleRoom inherit from Room, each implementing its own `get_room_type()`.
+- **Operator Overloading (+):** Adding two Booking objects should merge their booking IDs.
+- **Magic Methods (`__str__`):** Print details like Booking: "Booking ID", Guest: "Guest Name", Room: "Room Number".
+
+### Solution [https://github.com/abhiya492/OOPS_CHALLENGE/blob/master/CH6/P6.py]
+This system implements all the required features:
+
+1. **Encapsulation:** The Room class has private `__room_number` and `__room_type` attributes with getter/setter methods.
+2. **Inheritance & Polymorphism:** SingleRoom and DoubleRoom classes inherit from Room. Each subclass overrides the `get_room_type()` method with its specific implementation.
+3. **Operator Overloading:** The `__add__` method allows adding two bookings to create a combined booking ID. It concatenates the booking IDs of the two bookings.
+4. **Magic Methods:** `__str__` is implemented to print booking details in the required format.
