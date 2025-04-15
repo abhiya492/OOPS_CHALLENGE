@@ -1,19 +1,18 @@
 # **Challenge 1: E-Commerce System**
-### Goal: Design a system for an online store with multiple types of products, each having different taxes applied.
+## Goal: Design a system for an online store with multiple types of products, each having different taxes applied.
 
 ### Requirements
-Encapsulation:
+**Encapsulation:**
 Product class with private attributes (__price) and getter/setter.
-Inheritance & Polymorphism:
+
+**Inheritance & Polymorphism:**
 Electronics, Clothing, Food inherit from Product, each implementing its own calculate_tax().
-Operator Overloading (+):
+
+**Operator Overloading (+):**
 Adding two Product objects should merge their price.
-Magic Methods (__str__)
+
+**Magic Methods (__str__)**
 Print details like Product: Laptop, Price: 50000, Tax: 18%
-
-
-
-
 
 ## Solution 
 
